@@ -1,0 +1,133 @@
+<div class="app-content-container">
+  <div class="app-bar-wrapper vertical-centre">
+    <div class="page-bar-icon" (click)="goBack()">
+      <svg viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0V0z" />
+        <path fill="#FFFFFF" d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
+      </svg>
+    </div>
+    <div class="icon-wrapper">
+      <button mat-icon-button class="favourite-heart-btn" (click)="myFavourite()">
+        <svg viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path *ngIf="!isFavourite" fill="#FFFFFF" d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
+          <path *ngIf="isFavourite" fill="#FFFFFF" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+        </svg>
+      </button>
+      <button mat-icon-button  class="share-link-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path fill="#FFFFFF" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="app-body-container">
+    <div class="app-body-scroll">
+      <div class="job-container">
+        <div class="job-title-area-wrapper separate-line">
+          <div class="job-title">
+            數據挖掘工程師
+          </div>
+          <div class="job-subtitle-wrapper">
+            <div class="job-area grey-text">
+              廈門思明區
+            </div>
+            <div class="job-experience-years grey-text">
+              3-5年
+            </div>
+            <div class="job-subject grey-text">
+              本科
+            </div>
+          </div>
+        </div>
+        <div class="job-company-wrapper job-section-wrapper separate-line">
+          <div class="job-company-label section-text-white-space">
+           公司名稱
+          </div>
+          <div class="job-company-content section-text-white-space content-with-icon vertical-centre" (click)="toCompanyDetail()">
+            <div>
+              走走咖啡
+            </div>
+            <div class="content-select-icon vertical-centre">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#6c6c6c" d="M18.2,12.86,7.51,23.65a1.2,1.2,0,0,1-1.7,0,1.23,1.23,0,0,1,0-1.72L15.65,12,5.81,2.07a1.23,1.23,0,0,1,0-1.72,1.2,1.2,0,0,1,1.7,0L18.2,11.14A1.24,1.24,0,0,1,18.2,12.86Z"/>
+                </svg>
+            </div>
+          </div>
+        </div>
+        <div class="job-salary-wrapper job-section-wrapper separate-line">
+          <div class="job-salary-label section-text-white-space">
+            薪資
+          </div>
+          <div class="job-salary-content section-text-white-space">
+            15k-30k
+          </div>
+        </div>
+        <div class="job-duty-wrapper job-section-wrapper separate-line">
+          <div class="job-duty-label section-text-white-space">
+            工作內容
+          </div>
+          <div class="job-duty-content section-text-white-space">
+            1. 資料分析、挖掘、應用。<br>
+            2. 撰寫研究計畫、閱讀整理中英文獻。<br>
+            3. 負責大數據相關專案之規劃與推動。
+            4. 研發人工智慧分析、巨量資料分析、資料分析、機器學習、統計分析等相關技
+          </div>
+        </div>
+        <div class="job-require-wrapper job-section-wrapper separate-line">
+          <div class="job-require-label section-text-white-space">
+            條件要求
+          </div>
+          <div class="job-require-content section-text-white-space">
+            <div>
+                接受身份：上班族、應屆畢業生<br>
+                工作經歷：3-5年<br>
+                學歷要求：大學以上<br>
+                科系要求：公共衛生相關、醫務管理相關、數學及電算機科學學科類<br>
+                語文條件：不拘<br>
+                擅長工具：Python、R、SPSS<br>
+                工作技能：不拘<br>
+            </div>
+            <div>
+              <div>
+                其他條件：
+              </div>
+              <div>
+                  1.熟悉臨床作業(有護理臨床經驗者佳) <br>
+                  2.具數據分析相關經驗 <br>
+                  3.熟悉SPSS、R、Python等任一分析工具 <br>
+                  4.熟悉資料結構與關聯式資料庫存取語言SQL <br>
+                  5.具良好溝通能力、思考邏輯清晰、個性正面積極、認真負責<br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="job-location-wrapper job-section-wrapper separate-line">
+          <div class="job-location-label section-text-white-space">
+            上班地點
+          </div>
+          <div class="job-location-content">
+            <div class="location-name section-text-white-space">廈門市</div>
+            <div class="location-map section-text-white-space">
+
+            </div>
+          </div>
+        </div>
+        <div class="job-apply-method-wrapper job-section-wrapper separate-line">
+          <div class="job-apply-method-label section-text-white-space ">
+            應徵方式
+          </div>
+          <div class="job-apply-content section-text-white-space ">
+              聯絡人：楊先生<br>
+              E-mail：recruit@gmail.com<br>
+              電洽：186-50379876
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="apply-btn-wrapper">
+      應徵
+    </div>
+  </div>
+</div>

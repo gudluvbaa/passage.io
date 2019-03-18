@@ -1,0 +1,132 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$my-deep-pink: (
+  50: #fef1f0,
+  100: #fee3e1,
+  200: #fed5d2,
+  300: #fdc8c3,
+  400: #fdbab4,
+  500: #fdaca5,
+  600: #fc9f96,
+  700: #fc9187,
+  800: #fc8378,
+  900: #FC766A,
+  A100: #febbb5,
+  A200: #fda49c,
+  A400: #fd8d83,
+  A700: #FC766A,
+  contrast: (
+    50: $light-primary-text,
+    100: $light-primary-text,
+    200: $light-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $light-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$custom-app-primary: mat-palette($my-deep-pink, A700);
+$custom-app-accent:  mat-palette($mat-red, A200);
+// The warn palette is optional (defaults to red).
+$custom-app-warn:    mat-palette($my-deep-pink, A700);
+
+$custom-app-theme: mat-light-theme($custom-app-primary, $custom-app-accent, $custom-app-warn);
+@include angular-material-theme($custom-app-theme);
+
+body {
+  box-sizing: border-box;
+  max-width: 414px;
+  margin: 0px auto;
+  font-family:  Roboto, "Helvetica Neue", sans-serif;
+}
+input:focus {
+  outline-offset: 0;
+}
+:focus {
+  outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.mat-error{
+  color:#fa311f;
+}
+
+/***/
+.app-bar-wrapper {
+    padding-top: 24px;
+    height: 56px;
+    background-color: #FC766A;
+    display: flex;
+    align-items: center;
+}
+.app-body-container {
+  background-color: #F5F5F5;
+}
+.page-bar-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+.form-full-width {
+  width: 100%;
+}
+.form-half-width {
+  width: calc((100% - 8px)/2);
+}
+.custom-form-button {
+  background-color: #FC766A;
+  color: #FFFFFF;
+}
+.mobile-view-max-width {
+  max-width: 414px;
+  margin: 0 auto;
+}
+.button-shadow {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
+}
+.card-shadow {
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+}
+.tag-button-style {
+  border: 1px #FC766A solid;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.vertical-centre {
+  display: flex;
+  align-items: center;
+}
+.grey-text {
+  color: #6C6C6C;
+}
+.pink-text {
+  color: #FC766A
+}
+/*mat*/;
+.special-benefit-item .mat-checkbox-inner-container {
+  margin-right: 4px;
+}
+.form-radio mat-radio-button {
+  margin-right: 24px;
+}
+.custom-form-button.mat-button[disabled] {
+  background-color: #ADADAD;
+  color: #FFFFFF;
+}

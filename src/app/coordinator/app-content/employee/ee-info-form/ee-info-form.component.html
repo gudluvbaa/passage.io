@@ -1,0 +1,221 @@
+<div class="app-content-container">
+  <div class="app-bar-wrapper">
+    <div class="page-bar-icon" (click)="goBack()" *ngIf="stepIdx === 1">
+      <svg viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0V0z" />
+        <path fill="#FFFFFF" d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
+      </svg>
+    </div>
+    <div class="page-bar-icon" (click)="toPrevious()" *ngIf="stepIdx !== 1">
+      <svg viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0V0z" />
+        <path fill="#FFFFFF" d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
+      </svg>
+    </div>
+  </div>
+  <div class="app-body-container info-form-container" [ngSwitch]="stepIdx">
+    <div class="info-form-content" *ngSwitchCase="1">
+      <div class="info-form-header"></div>
+      <div class="info-form-body-wrapper no-padding-bottom card-shadow">
+        <div class="avatar">
+          <div class="avatar-img">
+            <img src="https://picsum.photos/128/128" alt="avatar">
+          </div>
+        </div>
+        <div class="form-img-scroll-wrapper">
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="姓名" />
+          </mat-form-field>
+          <div class="form-full-width form-radio-wrapper">
+            <mat-radio-group class="form-radio">
+              <mat-radio-button value="male">男</mat-radio-button>
+              <mat-radio-button value="female">女</mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <mat-form-field class="form-full-width">
+            <input matInput [matDatepicker]="birthPicker" placeholder="出生年月">
+            <mat-datepicker-toggle matSuffix [for]="birthPicker"></mat-datepicker-toggle>
+            <mat-datepicker #birthPicker></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="電話" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="E-mail" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput [matDatepicker]="joinTime" placeholder="投入工作時間">
+            <mat-datepicker-toggle matSuffix [for]="joinTime"></mat-datepicker-toggle>
+            <mat-datepicker #joinTime
+                            startView="multi-year"
+                            (monthSelected)="chosenMonthHandler($event, joinTime)"
+                            panelClass="example-month-picker">
+            </mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="info-form-content" *ngSwitchCase="2">
+      <div class="info-form-header">
+        最近一份工作經歷
+      </div>
+      <div class="info-form-body-wrapper card-shadow">
+        <div class="form-scroll-wrapper">
+          <div class="form-full-width form-radio-wrapper form-radio-first-wrapper">
+            <mat-radio-group class="form-radio">
+              <mat-radio-button value="0">已離職</mat-radio-button>
+              <mat-radio-button value="1">仍在職</mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="公司名稱" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="電話" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="工作區間" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="職位類型" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="技能" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="工作內容" />
+          </mat-form-field>
+        </div>
+      </div>
+    </div> -->
+    <div class="info-form-content" *ngSwitchCase="2">
+      <div class="info-form-header">
+        學歷
+      </div>
+      <div class="info-form-body-wrapper card-shadow">
+        <div class="form-scroll-wrapper">
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="學校" />
+          </mat-form-field>
+          <!-- <mat-form-field class="form-full-width">
+            <input matInput placeholder="學歷" />
+            <button mat-button matSuffix mat-icon-button (click)="selectItem()">
+              <div class="input-icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#6c6c6c" d="M18.2,12.86,7.51,23.65a1.2,1.2,0,0,1-1.7,0,1.23,1.23,0,0,1,0-1.72L15.65,12,5.81,2.07a1.23,1.23,0,0,1,0-1.72,1.2,1.2,0,0,1,1.7,0L18.2,11.14A1.24,1.24,0,0,1,18.2,12.86Z"/>
+                </svg>
+              </div>
+            </button>
+          </mat-form-field> -->
+          <mat-form-field class="form-full-width">
+            <mat-label>學歷</mat-label>
+            <mat-select value="">
+              <!-- <mat-option value="0"></mat-option> -->
+              <mat-option value="1">五專</mat-option>
+              <mat-option value="2">大學</mat-option>
+              <mat-option value="3">碩士</mat-option>
+              <mat-option value="4">博士</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="科系" />
+          </mat-form-field>
+          <!-- <mat-form-field class="form-full-width">
+            <input matInput placeholder="求學區間" />
+          </mat-form-field> -->
+          <div class="education-period">
+            <mat-form-field class="form-half-width">
+              <input matInput [matDatepicker]="edStartDate" placeholder="求學區間">
+              <mat-datepicker-toggle matSuffix [for]="edStartDate"></mat-datepicker-toggle>
+              <mat-datepicker #edStartDate startView="multi-year" (yearSelected)="chosenYearHandler($event)" (monthSelected)="chosenMonthHandler($event, edStartDate)">
+              </mat-datepicker>
+            </mat-form-field>
+            <mat-form-field class="form-half-width" floatLabel="never">
+              <input matInput [matDatepicker]="edEndDate" placeholder="">
+              <mat-datepicker-toggle matSuffix [for]="edEndDate"></mat-datepicker-toggle>
+              <mat-datepicker #edEndDate startView="multi-year" (yearSelected)="chosenYearHandler($event)" (monthSelected)="chosenMonthHandler($event, edEndDate)">
+              </mat-datepicker>
+            </mat-form-field>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="info-form-content" *ngSwitchCase="3">
+      <div class="info-form-header">
+        簡介與優勢
+      </div>
+      <div class="info-form-body-wrapper card-shadow">
+        <div class="form-scroll-wrapper">
+          <mat-form-field class="form-full-width">
+            <textarea matInput #strength placeholder="介紹自己，強調自己的強勢" rows="10" maxlength="140"></textarea>
+          </mat-form-field>
+          <div class="input-custom-hint">{{strength.value.length}} / 140</div>
+        </div>
+      </div>
+    </div>
+    <div class="info-form-content" *ngSwitchCase="4">
+      <div class="info-form-header">
+        求職意向
+      </div>
+      <div class="info-form-body-wrapper card-shadow">
+        <div class="form-scroll-wrapper">
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="目前狀態" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="期望職位" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="期待行業" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="工作城市" />
+          </mat-form-field>
+          <mat-form-field class="form-full-width">
+            <input matInput placeholder="薪資要求" />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div class="info-form-content" *ngSwitchCase="5">
+      <div class="info-form-header">
+        特殊需求
+      </div>
+      <div class="info-form-body-wrapper card-shadow">
+        <div class="form-scroll-wrapper">
+          <div class="special-benefit-list-type-wrapper" *ngFor=" let benefit of specialBenefitList ">
+            <mat-checkbox class="special-benefit-item" *ngFor=" let item of benefit.itemList ">{{item.itemName}}</mat-checkbox>
+            <!-- <div class="special-benefit-item" *ngFor=" let item of benefit.itemList ">
+              {{item.itemName}}
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info-form-step-wrapper mobile-view-max-width">
+      <div class="step-dot-wrapper">
+        <div class="step-dot" [ngClass]="{'step-dot-selected': stepIdx === 1}"></div>
+      </div>
+      <div class="step-dot-wrapper">
+        <div class="step-dot" [ngClass]="{'step-dot-selected': stepIdx === 2}"></div>
+      </div>
+      <div class="step-dot-wrapper">
+        <div class="step-dot" [ngClass]="{'step-dot-selected': stepIdx === 3}"></div>
+      </div>
+      <div class="step-dot-wrapper">
+        <div class="step-dot" [ngClass]="{'step-dot-selected': stepIdx === 4}"></div>
+      </div>
+      <div class="step-dot-wrapper">
+        <div class="step-dot" [ngClass]="{'step-dot-selected': stepIdx === 5}"></div>
+      </div>
+      <!-- <div class="step-dot-wrapper">
+        <div class="step-dot" [ngClass]="{'step-dot-selected': stepIdx === 6}"></div>
+      </div> -->
+    </div>
+  </div>
+  <div class="info-form-btn-container mobile-view-max-width">
+    <div (click)="toNext()" *ngIf="stepIdx !== 5">下一步</div>
+    <div (click)="toNext()" *ngIf="stepIdx === 5">確認</div>
+  </div>
+</div>

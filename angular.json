@@ -24,7 +24,7 @@
               "src/manifest.json"
             ],
             "styles": [
-              "src/styles.css"
+              "src/custom-theme.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true

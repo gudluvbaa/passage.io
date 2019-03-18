@@ -1,0 +1,41 @@
+<div class="app-bar-wrapper">
+  <div class="page-bar-icon" (click)="goBack()">
+    <svg viewBox="0 0 24 24">
+      <path fill="none" d="M0 0h24v24H0V0z" />
+      <path fill="#FFFFFF" d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
+    </svg>
+  </div>
+</div>
+<div class="account-form-container">
+  <div class="account-form-title">
+    註冊
+  </div>
+  <div class="account-form-wrapper"> 
+    <mat-form-field class="form-full-width">
+      <input matInput placeholder="帳號(電子信箱)">
+    </mat-form-field>
+    <mat-form-field class="form-full-width">
+      <input matInput type="password" placeholder="密碼">
+    </mat-form-field>
+    <mat-form-field class="form-full-width">
+      <input matInput type="password" placeholder="請再輸入一次密碼">
+    </mat-form-field>
+    <button mat-button class="form-full-width custom-form-button" [disabled]="false" (click)="goNext('employee')">下一步</button>
+  </div>
+  <div class="account-option-wrapper">
+    <!-- <div class="account-login">
+      帳戶密碼登錄
+    </div>
+    <div class="account-looking-around" (click)="goNext('guest')">
+      不然，先進去逛逛
+    </div> -->
+  </div>
+</div>
+<div class="account-footer-container account-footer-container">
+  <div class="footer-note light-text">
+    點擊下一步即表示您同意
+  </div>
+  <div class="footer-note">
+    用戶協議及隱私策略
+  </div>
+</div>
