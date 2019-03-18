@@ -54,3 +54,9 @@
         height: calc((100vh - 504px) / 2);
     }
 }
+
+@media screen and ( min-width: 415px ) {
+    .main-intention-container{
+        width: calc(414px - 32px);
+    } 
+}
