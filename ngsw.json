@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1552922634138,
+  "timestamp": 1552929420152,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,10 +11,10 @@
         "/es2015-polyfills.c5dd28b362270c767b34.js",
         "/favicon.ico",
         "/index.html",
-        "/main.034e38123d1cb4446028.js",
+        "/main.1b6c76842e52f55411bc.js",
         "/polyfills.8bbb231b43165d65d357.js",
         "/runtime.26209474bfa8dc87a77c.js",
-        "/styles.3ff695c00d717f2d2a11.css"
+        "/styles.fc0c1ed9f38762a58795.css"
       ],
       "patterns": []
     },
@@ -30,7 +30,8 @@
         "/assets/icons/icon-384x384.png",
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png"
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/cida.jpg"
       ],
       "patterns": []
     }
@@ -45,13 +46,14 @@
     "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/img/cida.jpg": "c44395f6e192333d8bacc0ef8d0e3cb98325a900",
     "/es2015-polyfills.c5dd28b362270c767b34.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "fa61852c458c01714765eea4caf2f1f50865042e",
-    "/main.034e38123d1cb4446028.js": "b01f14df142ea59576f869bb67f2a095fcf98d90",
+    "/index.html": "79ed56619e8537a7724fbdacb240af1fc048e58c",
+    "/main.1b6c76842e52f55411bc.js": "a1a5b8595b152818d9c57a5c2f561029e3c3d692",
     "/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "/styles.3ff695c00d717f2d2a11.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/styles.fc0c1ed9f38762a58795.css": "ab988a353b277ff48031620e5fa1f1f9cc8170f7"
   },
   "navigationUrls": [
     {
