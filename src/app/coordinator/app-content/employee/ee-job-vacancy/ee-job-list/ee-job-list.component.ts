@@ -40,4 +40,7 @@ export class EeJobListComponent implements OnInit {
   showDetail() {
     this._router.navigate(['app/employee/vacancy-detail']);
   }
+  mySetting() {
+    this._router.navigate(['app/user-setting']);
+  }
 }

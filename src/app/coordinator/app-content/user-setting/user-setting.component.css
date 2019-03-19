@@ -1,0 +1,26 @@
+
+
+.user-bottom-tool-bar {
+    height: 48px;
+    display: flex;
+    border-top: 1px #FC766A solid;
+    background-color: #FFFFFF;
+}
+.tool-wrapper {
+    width: calc(100% / 4);
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tool-icon svg {
+    width: 24px;
+}
+.tool-icon {
+    display: flex;
+    flex-direction: column;
+}
+.tool-text {
+    color: #FC766A;
+    font-size: 12px;
+}

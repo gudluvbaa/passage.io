@@ -19,14 +19,25 @@
 }
 .app-body-container {
     height: calc(100vh - 80px);
+    background-color: rgba(252, 118, 106, 5%);
 }
 .app-body-scroll {
     padding: 2px 0;
-    height: calc(100vh - 132px);
+    height: calc(100vh - 86px);
     overflow-y: auto;
 }
 .group-container {
 
+}
+.group-summary-info {
+    width: calc(100% - 88px);
+}
+.group-avatar {
+    width: 72px;
+    padding: 0 8px;
+}
+.group-avatar img{
+    width: 100%;
 }
 .separate-line {
     border-bottom: #ADADAD 1px solid;
@@ -47,4 +58,72 @@
 }
 .group-subtitle-wrapper div {
     margin-right: 8px;
+}
+.group-work-duty-time-wrapper {
+    padding: 8px 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.group-work-duty-time-info {
+    display: flex;
+    width: calc((100% - 32px)/ 2);
+    padding: 2px 4px;
+}
+.icon-label svg {
+    width: 16px;
+    height: 16px;
+}
+.work-content {
+    font-size: 12px;
+    margin-left: 4px;
+}
+.group-section-wrapper {
+    padding: 6px 16px;
+}
+.section-text-white-space {
+    padding: 2px 0;
+}
+.section-text-ellipsis {    
+}
+.section-text-ellipsis textarea {
+    overflow: hidden;
+    width: calc(100% - 6px);
+    line-height: 1.4em;
+    background-color: transparent;
+    border: transparent;
+}
+.section-text-ellipsis textarea::-webkit-resizer {
+    display: none;
+    -webkit-appearance: none;
+}
+.vacancy-item-card-container {
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    background-color: #FFFFFF;
+}
+.vacancy-title-salary-wrapper,
+.vacancy-tag-favourite-wrapper {
+    justify-content: space-between;
+}
+.vacancy-company-name {
+    font-weight: 300;
+}
+.card-tag-list {
+    margin: 2px 0 4px;
+    width: calc(100% - 48px);
+    display: flex;
+}
+.card-tag-item {
+    padding: 4px 6px;
+    font-size: 13px;
+    font-weight: 300;
+    background-color: rgba(252, 118, 106, 0.35);
+}
+.favourite-heart-btn {
+    position: relative;
+    z-index: 1001;
+}
+.favourite-heart-btn svg {
+    width: 24px;
+    height: 24px;
 }

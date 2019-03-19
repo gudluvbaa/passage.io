@@ -48,11 +48,11 @@
     color: #FC766A;
 }
 .job-vacancy-container {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 188px);
     padding: 8px 0 2px;
 }
 .job-vacancy-scroll {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 188px);
     overflow: auto;
 }
 .vacancy-item-card-container {
@@ -85,4 +85,28 @@
 .favourite-heart-btn svg {
     width: 24px;
     height: 24px;
+}
+.user-bottom-tool-bar {
+    height: 48px;
+    display: flex;
+    border-top: 1px #FC766A solid;
+    background-color: #FFFFFF;
+}
+.tool-wrapper {
+    width: calc(100% / 4);
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tool-icon svg {
+    width: 24px;
+}
+.tool-icon {
+    display: flex;
+    flex-direction: column;
+}
+.tool-text {
+    color: #FC766A;
+    font-size: 12px;
 }
