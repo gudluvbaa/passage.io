@@ -9,6 +9,8 @@ import { EmployeeComponent } from './coordinator/app-content/employee/employee.c
 import { EmployerComponent } from './coordinator/app-content/employer/employer.component';
 import { EmInfoViewComponent } from './coordinator/app-content/employer/em-info-view/em-info-view.component';
 import { EePortfolioComponent } from './coordinator/app-content/employee/ee-portfolio/ee-portfolio.component';
+import { EePortfolioPreviewComponent } from './coordinator/app-content/employee/ee-portfolio/ee-portfolio-preview/ee-portfolio-preview.component';
+import { EePortfolioEditComponent } from './coordinator/app-content/employee/ee-portfolio/ee-portfolio-edit/ee-portfolio-edit.component';
 import { EeInfoFormComponent } from './coordinator/app-content/employee/ee-info-form/ee-info-form.component';
 import { EeJobListComponent } from './coordinator/app-content/employee/ee-job-vacancy/ee-job-list/ee-job-list.component';
 import { EeJobDetailComponent } from './coordinator/app-content/employee/ee-job-vacancy/ee-job-detail/ee-job-detail.component';
@@ -25,7 +27,12 @@ const routes: Routes = [
     { path: '', redirectTo: 'employee', pathMatch: 'full' },
     { path:'employee', component: EmployeeComponent, children: [
       { path: '', redirectTo: 'portfolio', pathMatch: 'full' },
-      { path:'portfolio', component: EePortfolioComponent },
+      { path:'portfolio', component: EePortfolioComponent, children: [
+        { path: '', redirectTo: 'edit', pathMatch: 'full' },
+        { path:'edit', component: EePortfolioEditComponent },
+        { path:'preview', component: EePortfolioPreviewComponent }
+        ]
+      },
       { path:'info', component: EeInfoFormComponent },
       { path:'vacancy-list', component: EeJobListComponent },
       { path:'vacancy-detail', component: EeJobDetailComponent }

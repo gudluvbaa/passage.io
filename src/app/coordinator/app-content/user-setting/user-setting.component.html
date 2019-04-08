@@ -1,24 +1,124 @@
 <div class="app-content-container">
-  <div class="app-bar-wrapper vertical-centre">
-    <div class="page-bar-icon" (click)="goBack()">
-      <svg viewBox="0 0 24 24">
-        <path fill="none" d="M0 0h24v24H0V0z" />
-        <path fill="#FFFFFF" d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
-      </svg>
-    </div>
-    <div class="icon-wrapper">
-      <button mat-icon-button class="favourite-heart-btn" (click)="myFavourite()">
-        <svg viewBox="0 0 24 24">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path *ngIf="!isFavourite" fill="#FFFFFF" d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
-          <path *ngIf="isFavourite" fill="#FFFFFF" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-        </svg>
-      </button>
+  <div class="app-bar-wrapper vertical-centre horizontal-centre">
+    <div class="page-title">
+      設定
     </div>
   </div>
   <div class="app-body-container">
     <div class="app-body-scroll">
-
+      <div class="setting-card">
+        <div class="setting-content vertical-centre" (click)="myPortfolio()">
+          <div class="setting-icon list-img-style avatar-img">
+              <img src="https://picsum.photos/128/128" alt="avatar">
+          </div>
+          <div class="setting-text-subtitle-wrapper">
+            <div class="setting-text-title">
+              John Doe
+            </div>
+            <div class="setting-text-subtitle grey-text">
+              查看簡歷
+            </div>
+          </div>
+          <div class="setting-icon more-icon vertical-centre">
+            <svg viewBox="0 0 24 24">
+              <path fill="#D1D1D6" d="M18.2,12.86,7.51,23.65a1.2,1.2,0,0,1-1.7,0,1.23,1.23,0,0,1,0-1.72L15.65,12,5.81,2.07a1.23,1.23,0,0,1,0-1.72,1.2,1.2,0,0,1,1.7,0L18.2,11.14A1.24,1.24,0,0,1,18.2,12.86Z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="setting-card">
+        <div class="setting-content vertical-centre">
+          <div class="setting-icon list-icon-style vertical-centre">
+            <svg viewBox="0 0 24 24">
+              <path fill="none" d="M0,0H24V24H0Z"/>
+              <path fill="#FFF" d="M11.78,7h-.06a.72.72,0,0,0-.72.72v4.72a1,1,0,0,0,.49.86l4.15,2.49a.72.72,0,1,0,.73-1.23l-3.87-2.3V7.72A.72.72,0,0,0,11.78,7Z"/>
+              <path fill="#fc766a" d="M17.29,8.47H15.53a3.45,3.45,0,0,0-2.59,1.06l-.47-1.18a7,7,0,0,0-.59-.94,5.54,5.54,0,0,1,3.65-1.29h1.76V3.77L22,7.29l-4.71,3.54ZM2,17.88V15.53H4.94a3.45,3.45,0,0,0,2.59-1.06L8,15.65a6.12,6.12,0,0,0,.59.94,5.54,5.54,0,0,1-3.65,1.29Zm15.29,0H15.53a6,6,0,0,1-5.29-3.29L8.12,10.47a3.49,3.49,0,0,0-3.18-2H2V6.12H4.94a6,6,0,0,1,5.3,3.29l2.11,4.12a3.47,3.47,0,0,0,3.18,2h1.76V13.17L22,16.71l-4.71,3.52Z"/>
+            </svg>
+          </div>
+          <div class="setting-text-subtitle-wrapper">
+            <div class="setting-text-title">
+              切換模式
+            </div>
+            <div class="setting-text-subtitle grey-text">
+              目前模式：應徵模式
+            </div>
+          </div>
+          <div class="setting-icon more-icon vertical-centre">
+            <svg viewBox="0 0 24 24">
+              <path fill="#D1D1D6" d="M18.2,12.86,7.51,23.65a1.2,1.2,0,0,1-1.7,0,1.23,1.23,0,0,1,0-1.72L15.65,12,5.81,2.07a1.23,1.23,0,0,1,0-1.72,1.2,1.2,0,0,1,1.7,0L18.2,11.14A1.24,1.24,0,0,1,18.2,12.86Z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="setting-section-wrapper-title">
+        系統設定
+      </div>
+      <div class="setting-card">
+        <div class="setting-content vertical-centre">
+          <div class="setting-icon list-icon-style vertical-centre">
+            <svg viewBox="0 0 24 24">
+              <path fill="none" d="M0,0H24V24H0Z"/>
+              <path fill="#FFF" d="M11.78,7h-.06a.72.72,0,0,0-.72.72v4.72a1,1,0,0,0,.49.86l4.15,2.49a.72.72,0,1,0,.73-1.23l-3.87-2.3V7.72A.72.72,0,0,0,11.78,7Z"/>
+              <path fill="#fc766a" d="M17.29,8.47H15.53a3.45,3.45,0,0,0-2.59,1.06l-.47-1.18a7,7,0,0,0-.59-.94,5.54,5.54,0,0,1,3.65-1.29h1.76V3.77L22,7.29l-4.71,3.54ZM2,17.88V15.53H4.94a3.45,3.45,0,0,0,2.59-1.06L8,15.65a6.12,6.12,0,0,0,.59.94,5.54,5.54,0,0,1-3.65,1.29Zm15.29,0H15.53a6,6,0,0,1-5.29-3.29L8.12,10.47a3.49,3.49,0,0,0-3.18-2H2V6.12H4.94a6,6,0,0,1,5.3,3.29l2.11,4.12a3.47,3.47,0,0,0,3.18,2h1.76V13.17L22,16.71l-4.71,3.52Z"/>
+            </svg>
+          </div>
+          <div class="setting-text-wrapper">
+            <div class="setting-text-radio-wrapper">
+              <div class="setting-text-title">
+                系統通知
+              </div>
+            </div>
+            <mat-slide-toggle class="setting-text-toggle"
+                [checked]="true">
+            </mat-slide-toggle>
+          </div>
+        </div>
+      </div>
+      <div class="setting-card">
+        <div class="setting-content vertical-centre">
+          <div class="setting-icon list-icon-style vertical-centre">
+            <svg viewBox="0 0 24 24">
+              <path fill="none" d="M0,0H24V24H0Z"/>
+              <path fill="#FFF" d="M11.78,7h-.06a.72.72,0,0,0-.72.72v4.72a1,1,0,0,0,.49.86l4.15,2.49a.72.72,0,1,0,.73-1.23l-3.87-2.3V7.72A.72.72,0,0,0,11.78,7Z"/>
+              <path fill="#fc766a" d="M17.29,8.47H15.53a3.45,3.45,0,0,0-2.59,1.06l-.47-1.18a7,7,0,0,0-.59-.94,5.54,5.54,0,0,1,3.65-1.29h1.76V3.77L22,7.29l-4.71,3.54ZM2,17.88V15.53H4.94a3.45,3.45,0,0,0,2.59-1.06L8,15.65a6.12,6.12,0,0,0,.59.94,5.54,5.54,0,0,1-3.65,1.29Zm15.29,0H15.53a6,6,0,0,1-5.29-3.29L8.12,10.47a3.49,3.49,0,0,0-3.18-2H2V6.12H4.94a6,6,0,0,1,5.3,3.29l2.11,4.12a3.47,3.47,0,0,0,3.18,2h1.76V13.17L22,16.71l-4.71,3.52Z"/>
+            </svg>
+          </div>
+          <div class="setting-text-wrapper">
+            <div class="setting-text-radio-wrapper">
+              <div class="setting-text-title">
+                有人詢問時通知
+              </div>
+            </div>
+            <mat-slide-toggle class="setting-text-toggle"
+                [checked]="false">
+            </mat-slide-toggle>
+          </div>
+        </div>
+      </div>
+      <div class="setting-section-wrapper-title">
+        系統設定
+      </div>
+      <div class="setting-card">
+        <div class="setting-content vertical-centre">
+          <div class="setting-icon list-icon-style vertical-centre">
+            <svg viewBox="0 0 24 24">
+              <path fill="none" d="M0,0H24V24H0Z"/>
+              <path fill="#FFF" d="M11.78,7h-.06a.72.72,0,0,0-.72.72v4.72a1,1,0,0,0,.49.86l4.15,2.49a.72.72,0,1,0,.73-1.23l-3.87-2.3V7.72A.72.72,0,0,0,11.78,7Z"/>
+              <path fill="#fc766a" d="M17.29,8.47H15.53a3.45,3.45,0,0,0-2.59,1.06l-.47-1.18a7,7,0,0,0-.59-.94,5.54,5.54,0,0,1,3.65-1.29h1.76V3.77L22,7.29l-4.71,3.54ZM2,17.88V15.53H4.94a3.45,3.45,0,0,0,2.59-1.06L8,15.65a6.12,6.12,0,0,0,.59.94,5.54,5.54,0,0,1-3.65,1.29Zm15.29,0H15.53a6,6,0,0,1-5.29-3.29L8.12,10.47a3.49,3.49,0,0,0-3.18-2H2V6.12H4.94a6,6,0,0,1,5.3,3.29l2.11,4.12a3.47,3.47,0,0,0,3.18,2h1.76V13.17L22,16.71l-4.71,3.52Z"/>
+            </svg>
+          </div>
+          <div class="setting-text-subtitle-wrapper">
+            <div class="setting-text-title">
+              登出
+            </div>
+          </div>
+          <div class="setting-icon more-icon vertical-centre">
+            <svg viewBox="0 0 24 24">
+              <path fill="#D1D1D6" d="M18.2,12.86,7.51,23.65a1.2,1.2,0,0,1-1.7,0,1.23,1.23,0,0,1,0-1.72L15.65,12,5.81,2.07a1.23,1.23,0,0,1,0-1.72,1.2,1.2,0,0,1,1.7,0L18.2,11.14A1.24,1.24,0,0,1,18.2,12.86Z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="user-bottom-tool-bar">
       <div class="tool-wrapper">
@@ -45,8 +145,8 @@
       <div class="tool-wrapper">
         <div class="tool-icon">
           <svg viewBox="0 0 24 24">
-            <path fill="none" d="M0 0h24v24H0V0z"/>
-            <path fill="#FC766A" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/>
+            <path class="message-1" d="M0,0H24V24H0Z"/>
+            <path class="message-2" d="M10.89,15.89s5.78,5.55,5.67,5.55V15.89H22V2.56H2V15.89h8.89"/>
           </svg>
         </div>
         <div class="tool-text">

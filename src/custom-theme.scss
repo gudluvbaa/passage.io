@@ -113,6 +113,10 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
 }
+.horizontal-centre {
+  display: flex;
+  justify-content: center;
+}
 .grey-text {
   color: #6C6C6C;
 }

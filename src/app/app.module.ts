@@ -7,7 +7,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 import { MatFormFieldModule, MatInputModule, MatButtonModule, MatRadioModule, MatCheckboxModule,
-  MatMenuModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule } from '@angular/material';
+  MatMenuModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule, MatSlideToggleModule } from '@angular/material';
 
 import { AppContentComponent } from './coordinator/app-content/app-content.component';
 import { HomeComponent } from './coordinator/home/home.component';
@@ -22,6 +22,8 @@ import { EePortfolioComponent } from './coordinator/app-content/employee/ee-port
 import { EmployerComponent } from './coordinator/app-content/employer/employer.component';
 import { EmInfoViewComponent } from './coordinator/app-content/employer/em-info-view/em-info-view.component';
 import { UserSettingComponent } from './coordinator/app-content/user-setting/user-setting.component';
+import { EePortfolioPreviewComponent } from './coordinator/app-content/employee/ee-portfolio/ee-portfolio-preview/ee-portfolio-preview.component';
+import { EePortfolioEditComponent } from './coordinator/app-content/employee/ee-portfolio/ee-portfolio-edit/ee-portfolio-edit.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { UserSettingComponent } from './coordinator/app-content/user-setting/use
     HomeComponent,
     AuthComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    EePortfolioPreviewComponent,
+    EePortfolioEditComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +51,7 @@ import { UserSettingComponent } from './coordinator/app-content/user-setting/use
     MatFormFieldModule, MatInputModule,  MatButtonModule,
     MatRadioModule, MatCheckboxModule,  MatMenuModule,
     MatDatepickerModule, MatNativeDateModule, MatSelectModule, 
+    MatSlideToggleModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

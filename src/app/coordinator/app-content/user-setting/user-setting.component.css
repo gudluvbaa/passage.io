@@ -1,4 +1,13 @@
-
+.app-body-container {
+    
+}
+.page-title {
+    color: #FFFFFF;
+}
+.app-body-scroll {
+    height: calc(100vh - 128px);
+    overflow-y: auto;
+}
 
 .user-bottom-tool-bar {
     height: 48px;
@@ -23,4 +32,78 @@
 .tool-text {
     color: #FC766A;
     font-size: 12px;
+}
+.setting-card {
+    background-color: #FFFFFF;
+    height: 56px;
+    /* border: 1px red solid; */
+    display: flex;
+    align-items: center;
+}
+.setting-content {
+    margin-left: 16px;
+    padding-right: 16px;
+    height: 56px;
+    width: calc(100% - 16px);
+    border-bottom: 1px #ADADAD solid;
+}
+.list-img-style {
+    margin-right: 16px;
+}
+.avatar-img {
+    width: 40px;
+    height: 40px;
+}
+.avatar-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+.list-icon-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
+}
+.list-icon-style svg {
+    width: 24px;
+    height: 24px;
+}
+.setting-text-subtitle-wrapper {
+    /* padding-left: 16px; */
+    padding-right: 16px;
+    width: calc(100% - 90px);
+}
+.setting-text-wrapper {
+    display: flex;
+}
+.setting-text-radio-wrapper {
+    width: calc(100vw - 124px);
+}
+.setting-text-title {
+    /* padding: 0 2px; */
+}
+.setting-text-subtitle, 
+.setting-section-wrapper-title {
+    font-size: 12px;
+}
+.setting-section-wrapper-title {
+    color: #6C6C6C;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+.more-icon svg{
+    width: 16px;
+    height: 16px;
+}
+.message-1 {
+    fill:none;
+}
+.message-2 {
+    fill: none;
+    stroke: #fc766a;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width:2px;
 }

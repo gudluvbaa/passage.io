@@ -110,3 +110,13 @@
     color: #FC766A;
     font-size: 12px;
 }
+.message-1 {
+    fill:none;
+}
+.message-2 {
+    fill: none;
+    stroke: #fc766a;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width:2px;
+}

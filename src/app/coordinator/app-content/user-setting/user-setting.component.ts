@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-setting',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserSettingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {
   }
+  
+  mySetting() {
+    this._router.navigate(['app/user-setting']);
+  }
+
+  myPortfolio() {
+    this._router.navigate(['app/employee/portfolio/edit']);
+  }
+
 
 }

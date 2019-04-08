@@ -1,0 +1,55 @@
+.app-bar-wrapper {
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+.preview-btn {
+    padding-right: 16px;
+}
+.user-profile-container {
+    background-color: #FFF;
+}
+.user-profile-info-wrapper {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 0;
+    margin-left: 16px;
+}
+.user-profile-info-wrapper:hover {
+    cursor: pointer;
+}
+.user-profile-summary-info {
+    width: calc(100% - 88px);
+}
+.user-profile-avatar {
+    width: 72px;
+    padding: 0 8px;
+}
+.user-profile-avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+.separate-line {
+    border-bottom: #ADADAD 1px solid;
+}
+.user-profile-title {
+    font-size: 22px;
+    padding-bottom: 6px;
+}
+.user-profile-subtitle-wrapper {
+    display: flex;
+    font-size: 12px;
+}
+.user-profile-subtitle-wrapper div {
+    margin-right: 8px;
+}
+.setting-section-wrapper-title {
+    color: #6C6C6C;
+    font-size: 12px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    background-color: #F5F5F5;
+}
