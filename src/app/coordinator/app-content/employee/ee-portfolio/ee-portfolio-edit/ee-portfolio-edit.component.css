@@ -1,3 +1,7 @@
+.app-body-scroll {
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+}
 .app-bar-wrapper {
     justify-content: space-between;
     color: #FFFFFF;
@@ -52,4 +56,140 @@
     align-items: center;
     padding-left: 16px;
     background-color: #F5F5F5;
+}
+.user-profile-description {
+    font-size: 12px;
+    padding: 8px 16px 8px 0;
+    margin-left: 16px;
+}
+.setting-section-with-add-wrapper {
+    color: #6C6C6C;
+    font-size: 12px;
+    height: 36px;
+    padding-left: 16px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-item-title {
+
+}
+.add-item-btn {
+
+}
+
+.add-item-btn {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+.add-item-btn svg {
+    width: 16px;
+    height: 16px;
+}
+.add-item-btn-1 {
+    fill:#fff;
+}
+.add-item-btn-1,
+.add-item-btn-2 { 
+    stroke:#fc766a;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}
+.add-item-btn-2 { 
+    fill:none;
+}
+.user-job-intention-list-wrapper {
+
+}
+.user-job-intention-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    padding: 8px 16px 8px 0;
+}
+.user-job-intention-title-wrapper {
+    display: flex; 
+    justify-content: space-between;
+}
+.user-job-intention-title-state-wrapper {
+    display: flex;
+    align-items: center;
+    width: 67%;
+}
+.user-job-intention-salary {
+    margin-left: 8px;
+    color: #fc766a;
+}
+.user-job-intention-work-state-wrapper {
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+}
+.user-job-intention-subtitle-wrapper {
+    display: flex;
+}
+.user-job-intention-location {
+    font-size: 12px;
+    margin-right: 8px;
+}
+.user-job-intention-industry {
+    font-size: 12px;
+
+}
+.user-job-experience-list-wrapper {
+
+}
+.user-job-experience-item-wrapper,
+.user-education-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    padding: 8px 16px 8px 0;
+}
+.user-job-experience-title-wrapper,
+.user-education-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.user-job-experience-job-group,
+.user-education-title {
+    width: 40%;
+}
+.user-job-experience-job-period,
+.user-education-period {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.experience-job-start,
+.experience-job-end,
+.education-start,
+.education-end {
+    width: 62px;
+    display: flex;
+    justify-content: flex-end;
+}
+.experience-job-start,
+.education-start {
+    justify-content: flex-start;
+}
+.experience-job-end,
+.education-end {
+    justify-content: flex-end;
+}
+.user-job-experience-job-title,
+.user-job-experience-content,
+.user-education-degree,
+.user-education-subject,
+.user-education-content {
+    font-size: 12px;
+}
+.user-job-experience-content-wrapper,
+.user-education-content-wrapper {
+    margin-top: 8px;
+}
+.user-education-subtitle-wrapper {
+    display: flex;
 }
