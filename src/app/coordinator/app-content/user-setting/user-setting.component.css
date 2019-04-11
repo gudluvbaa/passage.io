@@ -5,7 +5,7 @@
     color: #FFFFFF;
 }
 .app-body-scroll {
-    height: calc(100vh - 128px);
+    height: calc(100vh - 104px);
     overflow-y: auto;
 }
 

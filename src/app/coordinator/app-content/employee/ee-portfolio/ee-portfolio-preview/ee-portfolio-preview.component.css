@@ -1,0 +1,209 @@
+.app-content-container {
+    -webkit-animation: mymove 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    animation: mymove 1s ;
+}
+.app-body-scroll {
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+.app-bar-wrapper {
+    justify-content: space-between;
+}
+.share-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 16px;
+}
+.share-link-btn svg  {
+    width: 24px;
+    height: 24px;
+}
+.preview-btn {
+    padding-right: 16px;
+}
+.user-profile-container {
+    background-color: #FFF;
+}
+.user-profile-info-wrapper {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 0;
+    margin-left: 16px;
+}
+.user-profile-info-wrapper:hover {
+    cursor: pointer;
+}
+.user-profile-summary-info {
+    width: calc(100% - 88px);
+}
+.user-profile-avatar {
+    width: 72px;
+    padding: 0 8px;
+}
+.user-profile-avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+.separate-line {
+    border-bottom: #ADADAD 1px solid;
+}
+.user-profile-subtitle-wrapper {
+    display: flex;
+    font-size: 12px;
+}
+.user-profile-subtitle-wrapper div {
+    margin-right: 8px;
+}
+.setting-section-wrapper-title {
+    color: #6C6C6C;
+    font-size: 12px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+.user-profile-description {
+    font-size: 12px;
+    padding: 0 16px 8px 0;
+    margin-left: 16px;
+}
+.user-job-intention-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    padding: 0 16px 8px 0;
+}
+.user-job-intention-title-wrapper {
+    display: flex; 
+    justify-content: space-between;
+}
+.user-job-intention-title-state-wrapper {
+    display: flex;
+    align-items: center;
+    width: 67%;
+}
+.user-job-intention-salary {
+    margin-left: 8px;
+    color: #fc766a;
+}
+.user-job-intention-work-state-wrapper {
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+}
+.user-job-intention-subtitle-wrapper {
+    display: flex;
+}
+.user-job-intention-location {
+    font-size: 12px;
+    margin-right: 8px;
+}
+.user-job-intention-industry {
+    font-size: 12px;
+
+}
+.user-job-experience-item-wrapper,
+.user-education-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    padding: 0 16px 8px 0;
+}
+.user-job-experience-title-wrapper,
+.user-education-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.user-job-experience-job-group,
+.user-education-title {
+    width: 40%;
+}
+.user-job-experience-job-period,
+.user-education-period {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.experience-job-start,
+.experience-job-end,
+.education-start,
+.education-end {
+    width: 62px;
+    display: flex;
+    justify-content: flex-end;
+}
+.experience-job-start,
+.education-start {
+    justify-content: flex-start;
+}
+.experience-job-end,
+.education-end {
+    justify-content: flex-end;
+}
+.user-job-experience-job-title,
+.user-job-experience-content,
+.user-education-degree,
+.user-education-subject,
+.user-education-content {
+    font-size: 12px;
+}
+.user-job-experience-content-wrapper,
+.user-education-content-wrapper {
+    margin-top: 8px;
+}
+.user-education-subtitle-wrapper {
+    display: flex;
+}
+.user-social-network-item {
+    margin-left: 16px;
+    padding: 0 16px 8px 0;
+    font-size: 12px;
+}
+.user-attachment-list-wrapper {
+    margin-left: 16px;
+    padding: 0 16px 8px 0;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-working-skill-tag-list-wrapper {
+    margin-left: 16px;
+    padding: 0 16px 8px 0;
+    font-size: 12px;
+}
+.user-working-skill-tag-container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-working-skill-item {
+    color: #FC766A;
+    font-weight: 300;
+    padding: 6px 12px;
+    border: 1px solid #FC766A;
+    border-radius: 4px;
+    background-color: #F5EEED;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.user-attachment-item {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+}
+.user-attachment-item img {
+    width: 100%;
+}
+@-webkit-keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes mymove {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  

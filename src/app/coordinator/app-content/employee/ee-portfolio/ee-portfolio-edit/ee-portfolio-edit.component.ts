@@ -13,7 +13,15 @@ export class EePortfolioEditComponent implements OnInit {
   ngOnInit() {
   }
 
+  goBack() {
+    this._router.navigate(['app/user-setting']);
+  }
+
   goSetInfo() {
     this._router.navigate(['app/employee/info']);
+  }
+
+  goPreview() {
+    this._router.navigate(['app/employee/portfolio/preview']);
   }
 }

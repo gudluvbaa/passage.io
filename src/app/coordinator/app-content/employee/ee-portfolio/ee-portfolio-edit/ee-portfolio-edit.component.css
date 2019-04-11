@@ -1,5 +1,5 @@
 .app-body-scroll {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 56px);
     overflow-y: auto;
 }
 .app-bar-wrapper {
@@ -36,10 +36,6 @@
 }
 .separate-line {
     border-bottom: #ADADAD 1px solid;
-}
-.user-profile-title {
-    font-size: 22px;
-    padding-bottom: 6px;
 }
 .user-profile-subtitle-wrapper {
     display: flex;
@@ -192,4 +188,35 @@
 }
 .user-education-subtitle-wrapper {
     display: flex;
+}
+.user-social-network-item {
+    margin-left: 16px;
+    padding: 8px 16px 8px 0;
+    font-size: 12px;
+}
+.user-working-skill-tag-list-wrapper,
+.user-attachment-list-wrapper {
+    margin-left: 16px;
+    padding: 8px 16px 8px 0;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-working-skill-item {
+    color: #FC766A;
+    font-weight: 300;
+    padding: 6px 12px;
+    border: 1px solid #FC766A;
+    border-radius: 4px;
+    background-color: #F5EEED;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.user-attachment-item {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+}
+.user-attachment-item img {
+    width: 100%;
 }

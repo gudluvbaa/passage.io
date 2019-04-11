@@ -21,5 +21,8 @@ export class UserSettingComponent implements OnInit {
     this._router.navigate(['app/employee/portfolio/edit']);
   }
 
+  jobList() {
+    this._router.navigate(['app/employee/vacancy-list']);
+  }
 
 }

@@ -1,3 +1,230 @@
-<p>
-  ee-portfolio-preview works!
-</p>
+<div class="app-content-container">
+    <div class="app-bar-wrapper vertical-centre">
+      <div class="page-bar-icon" (click)="goBack()">
+        <svg viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path fill="#FFFFFF" d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
+        </svg>
+      </div>
+      <!-- <div class="page-title">
+        設定
+      </div> -->
+      <button mat-icon-button class="share-link-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path fill="#FFFFFF" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+        </svg>
+      </button>
+    </div>
+    <div class="app-body-container">
+      <div class="app-body-scroll">
+        <div class="user-profile-container">
+          <div class="user-profile-info-wrapper separate-line" (click)="goSetInfo()">
+            <div class="user-profile-summary-info">
+              <div class="user-profile-user-name">
+                John Doe
+              </div>
+              <div class="user-profile-subtitle-wrapper">
+                <div class="user-profile-experience-years grey-text">
+                  10年以上
+                </div>
+                <div class="user-profile-latest-education grey-text">
+                  3-5年
+                </div>
+                <div class="user-profile-age grey-text">
+                  38歲
+                </div>
+              </div>
+            </div>
+            <div class="user-profile-avatar">
+              <img src="https://picsum.photos/128/128" alt="gogoCafe">
+            </div>
+          </div>
+          <div class="setting-section-wrapper-title">
+            簡介與優勢
+          </div>
+          <div class="user-profile-description separate-line">
+              我怎麼能夠把你來比作夏天？
+              你不獨比它可愛也比它溫婉：
+              狂風把五月寵愛的嫩蕊作踐，
+              夏天出賃的期限又未免太短：
+              天上的眼睛有時照得太酷烈，
+              它那炳耀的金顏又常遭掩蔽：
+              被機緣或無常的天道所摧折，
+              沒有芳豔不終於彫殘或銷毀。
+              但是你的長夏永遠不會彫落，
+              也不會損失你這皎潔的紅芳，
+              或死神誇口你在他影裡漂泊
+          </div>
+          <div class="setting-section-wrapper-title">
+              求職意向
+          </div>
+          <div class="user-job-intention-list-wrapper">
+            <div class="user-job-intention-item-wrapper separate-line">
+              <div class="user-job-intention-title-wrapper">
+                <div class="user-job-intention-title-state-wrapper">
+                  <div class="user-job-intention-title">
+                    數據分析師
+                  </div>
+                  <div class="user-job-intention-salary">
+                    10-11k
+                  </div>
+                </div>
+                <div class="user-job-intention-work-state-wrapper">
+                  離職-隨時到職
+                </div>
+              </div>
+              <div class="user-job-intention-subtitle-wrapper">
+                <div class="user-job-intention-location grey-text">
+                  廈門
+                </div>
+                <div class="user-job-intention-industry grey-text">
+                  行業不限
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="setting-section-wrapper-title">
+              工作經驗
+          </div>
+          <div class="user-job-experience-list-wrapper">
+            <div class="user-job-experience-item-wrapper separate-line">
+              <div class="user-job-experience-title-wrapper">
+                <div class="user-job-experience-job-group">
+                  台積電
+                </div>
+                <div class="user-job-experience-job-period">
+                  <div class="experience-job-start">
+                    2016/09
+                  </div>
+                  -
+                  <div class="experience-job-end">
+                      2019/09
+                  </div>
+                </div>
+              </div>
+              <div class="user-job-experience-subtitle-wrapper">
+                <div class="user-job-experience-job-title grey-text">
+                  前端工程師
+                </div>
+              </div>
+              <div class="user-job-experience-content-wrapper">
+                <div class="user-job-experience-content">
+                    我怎麼能夠把你來比作夏天？
+                    你不獨比它可愛也比它溫婉：
+                    狂風把五月寵愛的嫩蕊作踐，
+                    夏天出賃的期限又未免太短：
+                    天上的眼睛有時照得太酷烈，
+                    它那炳耀的金顏又常遭掩蔽：
+                    被機緣或無常的天道所摧折，
+                    沒有芳豔不終於彫殘或銷毀。
+                    但是你的長夏永遠不會彫落，
+                    也不會損失你這皎潔的紅芳，
+                    或死神誇口你在他影裡漂泊
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="setting-section-wrapper-title">
+              學歷
+          </div>
+          <div class="user-education-list-wrapper">
+            <div class="user-education-item-wrapper separate-line">
+              <div class="user-education-title-wrapper">
+                <div class="user-education-title">
+                  國立臺灣大學
+                </div>
+                <div class="user-education-period">
+                  <div class="education-start">
+                    2016/09
+                  </div>
+                  -
+                  <div class="education-end">
+                      2019/09
+                  </div>
+                </div>
+              </div>
+              <div class="user-education-subtitle-wrapper">
+                <div class="user-education-degree grey-text">
+                  碩士
+                </div>
+                -
+                <div class="user-education-subject grey-text">
+                  哲學系
+                </div>
+              </div>
+              <div class="user-education-content-wrapper">
+                <div class="user-education-content">
+                    我怎麼能夠把你來比作夏天？
+                    你不獨比它可愛也比它溫婉：
+                    狂風把五月寵愛的嫩蕊作踐，
+                    夏天出賃的期限又未免太短：
+                    天上的眼睛有時照得太酷烈，
+                    它那炳耀的金顏又常遭掩蔽：
+                    被機緣或無常的天道所摧折，
+                    沒有芳豔不終於彫殘或銷毀。
+                    但是你的長夏永遠不會彫落，
+                    也不會損失你這皎潔的紅芳，
+                    或死神誇口你在他影裡漂泊
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="setting-section-wrapper-title">
+            社交主頁
+          </div>
+          <div class="user-social-network-list-wrapper">
+            <div class="user-social-network-item separate-line">
+              NULL
+            </div>
+          </div>
+          <div class="setting-section-wrapper-title">
+            工作技能
+          </div>
+          <div class="user-working-skill-tag-list-wrapper">
+            <div class="user-working-skill-tag-container-wrapper separate-line">
+              <div class="user-working-skill-item">
+                Web
+              </div>
+              <div class="user-working-skill-item">
+                Web
+              </div>
+              <div class="user-working-skill-item">
+                APP
+              </div>
+              <div class="user-working-skill-item">
+                UI
+              </div>
+              <div class="user-working-skill-item">
+                UX
+              </div>
+              <div class="user-working-skill-item">
+                Javascript
+              </div>
+              <div class="user-working-skill-item">
+                graphic
+              </div>
+              <div class="user-working-skill-item">
+                DB
+              </div>
+            </div>
+          </div>
+          <div class="setting-section-wrapper-title">
+              附件
+          </div>
+          <div class="user-attachment-list-wrapper">
+            <div class="user-attachment-item">
+                <!-- <img src="image.svg" onerror="this.onerror=null; this.src='image.png'"> -->
+              <img src="../../../../../../assets/img/microsoft_office_word.svg" alt="word">
+            </div>
+            <div class="user-attachment-item">
+              <img src="../../../../../../assets/img/pdf.svg" alt="pdf">
+            </div>
+            <div class="user-attachment-item">
+              <img src="../../../../../../assets/img/jpg.svg" alt="jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

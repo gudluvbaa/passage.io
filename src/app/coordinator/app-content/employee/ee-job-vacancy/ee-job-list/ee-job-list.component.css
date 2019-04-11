@@ -48,11 +48,11 @@
     color: #FC766A;
 }
 .job-vacancy-container {
-    height: calc(100vh - 188px);
+    height: calc(100vh - 164px);
     padding: 8px 0 2px;
 }
 .job-vacancy-scroll {
-    height: calc(100vh - 188px);
+    height: calc(100vh - 164px);
     overflow: auto;
 }
 .vacancy-item-card-container {

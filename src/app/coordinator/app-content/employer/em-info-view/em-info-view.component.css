@@ -3,7 +3,7 @@
 }
 .icon-wrapper {
     display: flex;
-    margin-right: 12px;
+    /* margin-right: 12px; */
 }
 .favourite-heart-btn, 
 .share-link-btn {
@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     /* padding: 0 4px; */
+    padding-right: 16px;
 }
 .favourite-heart-btn svg,
 .share-link-btn svg  {
@@ -18,12 +19,12 @@
     height: 24px;
 }
 .app-body-container {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 56px);
     background-color: rgba(252, 118, 106, 5%);
 }
 .app-body-scroll {
     padding: 2px 0;
-    height: calc(100vh - 86px);
+    height: calc(100vh - 62px);
     overflow-y: auto;
 }
 .group-container {
